@@ -1,127 +1,1439 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Janhavi Palande -  Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <div class="container">
-            <h1>Janhavi Palande</h1>
-            <nav>
-                <div class="nav-info">
-                    <p><strong>+91 8412073383</strong>  &nbsp;|&nbsp; <a href="mailto:janhavipalande18@gmail.com">janhavipalande18@gmail.com</a> &nbsp;|&nbsp; <strong>GitHub:</strong> <a href="https://github.com/JanhaviiiP" target="_blank">JanhaviiiP</a> &nbsp;</p>
-                </div>
-            </nav>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="assets\images\avatar.jpg" alt="Janhavi Palande" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="janhavipalande">Janhavi Palande</h1>
+
+          <p class="title">Data Science And Analytics</p>
         </div>
-    </header>
 
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>Hello, I’m Janhavi Rupesh Palande. As a data-driven professional skilled in data analysis, business intelligence, and market research, I specialize in transforming complex data into actionable insights.
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
 
-                My expertise spans SQL, Excel, Power BI, and Python, enabling me to deliver impactful visualizations and reporting. With a strong foundation in data collection, modeling, preprocessing, and statistical analysis, I excel at addressing business challenges with analytical solutions by closely collaborating with key stakeholders. 
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:janhavipalande18@gmail.com" class="contact-link">janhavipalande18@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+12133522795" class="contact-link">+91 8412073383</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1982-06-23">18 July, 2001</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>New Mumbai, India</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://github.com/JanhaviiiP" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/janhavi-palande/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Skills</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Certificates</button>
+          </li>
+          
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Hello, I’m Janhavi Rupesh Palande. As a data-driven professional skilled in data analysis, business intelligence, and market research, I specialize in transforming complex data into actionable insights.
+          </p>
+
+          <p>
+            My expertise spans SQL, Excel, Power BI, and Python, enabling me to deliver impactful visualizations and reporting. With a strong foundation in data collection, modeling, preprocessing, and statistical analysis, I excel at addressing business challenges with analytical solutions by closely collaborating with key stakeholders. 
+            Passionate about staying ahead of trends, I thrive on innovation and am committed to enhancing efficiency and driving meaningful results in all my endeavors.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="assets\images\transparent-report-icon-analytics-icon-60812222e130f4.7516958416190756189224.png
+                " alt="design icon" width="60">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Data Analysis</h4>
+
+                <p class="service-item-text">
+                  Expert-level data analysis, uncovering patterns and insights to inform strategic decision-making.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="50">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">AI & Machine Learning</h4>
+
+                <p class="service-item-text">
+                  Professional machine learning models and AI solutions tailored to solve complex business challenges.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="50">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Data Engineering</h4>
+
+                <p class="service-item-text">
+                  Building robust data pipelines and infrastructure to ensure smooth data flow for analytics and applications.
+                </p>
+              </div>
+
+            </li>
+
+            
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="assets\images\growth.png" alt="BI icon" width="50">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Business Intelligence</h4>
+
+                <p class="service-item-text">
+                  Transforming data into actionable intelligence for strategic planning, performance tracking, and business optimization.
+                </p>
+              </div>
+
+            </li>
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="assets\images\research.png" alt=" icon" width="60">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Research</h4>
+
+                <p class="service-item-text">
+                  Thorough market and industry research using both primary and secondary methods for actionable insights.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="assets\images\Cloud computing.png" alt="camera icon" width="60">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Cloud Computing </h4>
+
+                <p class="service-item-text">
+                  Utilizing cloud platforms like Azure to store, process, and analyze data efficiently at scale.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <!-- <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Nidhi Pujari " width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Nidhi Pujari </h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Janhavi  was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Shraddha Bhosle" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Shraddha Bhosle</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Janhavi was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. 
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+
+          </ul>
+
+        </section> -->
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Nidhi Pujari" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Nidhi Pujari</h4>
+
+              <time datetime="2021-06-14">14 June, 2023</time>
+
+              <div data-modal-text>
+                <p>
+                  Janhavi was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. 
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
+        <!-- <section class="clients">
+
+          <h3 class="h3 clients-title">Clients</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-1-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-2-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-3-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-4-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-5-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-6-color.png" alt="client logo">
+              </a>
+            </li>
+
+          </ul>
+
+        </section> -->
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h1 class="h4 timeline-item-title">University Of Mumbai </h1>
+
+
+              <span>  <h4> M.Sc. Computer Science (Data Science and Emerging Technologies)      &nbsp;&nbsp;     2022 — 2024 </h4></span>
+
+              <p class="timeline-text">
+                Research Team Member: Focused on Ethical AI and Bias Mitigation in ML Models  
+              </p>
+
+              <li class="timeline-item">
+
+                <span> <h4> B.Sc. Computer Science       &nbsp;&nbsp;    2019 — 2022 </h3></span>
+  
+                <p class="timeline-text">
+                  CGPA: 9.35  
+                </p>
+  
+              </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Product Analyst, CDNA Technologies Pvt. Ltd, Mumbai</h4>
+
+              <span>Mar — Oct 2024</span>
+
+              <p class="timeline-text">
+               -  Transformed business strategies by extracted and processed data from APIs, flat files, and databases using SQL on Azure and Python scripts, optimizing processes and decision-making by 15% while fulfilling stakeholders' data requests.<br><br>
+              
+               -  Monitored and reviewed data on key product metrics, assessing performance against goals, generating market and competitor insights that improved processes and enhanced product capabilities.<br><br>
+              
+               -  Conducted market research with surveys and data analytics to understand customer behavior and preferences, created  user personas to guide product and marketing strategies using demographic data and feedback.<br><br>
+               
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Business Intelligence Associate, Marico Limited, Mumbai </h4>
+
+              <span>Aug – Dec 2023</span>
+
+              <p class="timeline-text">
+               - Researched and analyzed business metrics, enhancing data accuracy by 40% through rigorous validation processes. Generated reports through daily and monthly analysis using SAP, delivering Tableau visualizations that drove strategic decisions and secured recognition as a top 3 intern.<br><br>
                 
-                Passionate about staying ahead of trends, I thrive on innovation and am committed to enhancing efficiency and driving meaningful results in all my endeavors.</p>
-        </div>
-    </section>
-    <section id="skills">
-        <div class="container">
-            <h2>Skills</h2>
-            <div class="skills-list">
-                <div class="skill-item">
-                    <img src="images/sql-icon.png" alt="SQL" class="skill-icon">
-                    <h3>SQL</h3>
-                </div>
-                <div class="skill-item">
-                    <img src="images/excel-icon.png" alt="Excel" class="skill-icon">
-                    <h3>Excel</h3>
-                </div>
-                <div class="skill-item">
-                    <img src="images/powerbi-icon.png" alt="Power BI" class="skill-icon">
-                    <h3>Power BI</h3>
-                </div>
-                <div class="skill-item">
-                    <img src="images/tableau-icon.png" alt="Tableau" class="skill-icon">
-                    <h3>Tableau</h3>
-                </div>
-                <div class="skill-item">
-                    <img src="images/python-icon.png" alt="Python" class="skill-icon">
-                    <h3>Python</h3>
-                </div>
-                <div class="skill-item">
-                    <img src="images\Microsoft Azure.jpg" alt="Microsoft Azure Cloud" class="skill-icon">
-                    <h3>Microsoft Azure Cloud</h3>
-                </div>
-            </div>
-        </div>
-    </section>
+               - Enhanced data integrity by 30% through rigorous validation processes in Snowflake with SQL, boosting data-driven insights and adhering to data governance standards while executing ETL workflows using Pentaho Kettle.<br><br>
 
-    <section id="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="project-list">
-                <div class="project-item">
-                    <a href="https://github.com/JanhaviiiP/Customer-Segmentation-" target="_blank">
-                        <img src="images\customer.png" alt="SQL Project">
-                        <h3>SQL</h3>
-                        <h4> Customer Segmentation Analysis</h4>
-                        <p>This analysis uses SQL to segment customer data by demographics, behavior, and engagement. By applying segmentation techniques and visualizing segments with charts and graphs, businesses can tailor marketing strategies for better engagement and satisfaction.</p>
-                    </a>
-                </div>
-               
-                 <!-- New Projects -->
-                 <div class="project-item">
-                    <a href="https://github.com/JanhaviiiP/Sales_Insight-PowerBI" target="_blank">
-                        <img src="images\sales-insights.png" alt="Data Visualization Project">
-                        <h3>Data Visualization</h3>
-                        <h4> Sales and Revenue Analysis Dashboard </h4>
-                        <p> The dashboard provides insights into the total products sold, revenue generated, and profit across different markets. It also highlights trends over time and segments revenue by zones and customer types.</p>
-                    </a>
-                </div>
-                <div class="project-item">
-                    <a href="https://github.com/JanhaviiiP/Stock-Market-finance-" target="_blank">
-                        <img src="images\stock.jpg" alt="Python Project">
-                        <h3>Python</h3>
-                        <h4>Stock Market Portfolio Optimization and Anomaly Detection</h4>
-                        <p>This analysis uses Python to optimize stock portfolios with Modern Portfolio Theory (MPT) and detect market anomalies, providing insights through key metrics and visualizations of trends, price adjustments, and correlations.</p>
-                    </a>
-                </div>
-               
-                <div class="project-item">
-                    <a href="https://github.com/JanhaviiiP/Life_Insurance_Predication" target="_blank">
-                        <img src="images/healthcare.png" alt="ML Model Project">
-                        <h3>Machine Learning </h3>
-                        <h4>Life Insurance Prediction System </h4>
-                        <p>The ML model delivers precise insurance cost predictions through Gradient Boosting. By analyzing comprehensive health and lifestyle data, it determines optimal premiums, mitigates risk, and improves customer retention.</p>
-                    </a>
-                </div>
-                <div class="project-item">
-                    <a href="https://github.com/JanhaviiiP/Data-Science-/tree/main/Text-Summarizer-using-GenAi" target="_blank">
-                        <img src="images\ai.jpg" alt="data science  Project">
-                        <h3>AI  </h3>
-                        <h4>Text Summarization using Gen AI / LLM  </h4>
-                        <p>This project utilizes Generative AI and LLMs to create accurate text summaries. It effectively distills lengthy documents into concise, informative summaries, enhancing content accessibility and aiding in quick information retrieval.</p>                    </a>
-                </div>
-                <div class="project-item">
-                    <a href="https://github.com/JanhaviiiP" target="_blank">
-                        <img src="images\more.png" alt="GitHub" class="skill-icon">
-                        <h3> View More Projects</h3>
-                        <p>Explore additional work and analyses on my GitHub.</p>
-                    </a>
-                </div>s
-            </div>
-        </div>
-    </section>
+                - Translated 10+ business requirements into BI specifications by collaborating with sales and marketing teams; addressed BI tool issues, ensuring secure and accurate data management. <br><br>
+              
+              </p>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Janhavi Rupesh Palande</p>
-        </div>
-    </footer>
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title"> Data Science Intern, Cantaloupe IT Solutions LLP, Thane</h4>
+
+              <span>Nov – Jan 2023 </span>
+
+              <p class="timeline-text">
+              - Ensured data sanctity through data cleaning, and transformed data to meet specific requirements. Constructed data models and structures, executed data extraction and mining, and developed data pipelines.<br><br>
+                
+              - Developed and deployed machine learning models, boosting accuracy by 25%, with data annotations to enhance model training and statistical analysis. Ensured AI integration and conducted model validation for reliability.<br><br>
+                
+              - Verified data accuracy and quality to elevated workflow efficiency by 40% and supported research efforts through secondary data analysis, including web data mining and quality assurance, to interpret results and guide project goals. <br><br>
+                
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">  Software Developer Intern, VASP Solutions LLP, Pune </h4>
+
+              <span>Mar – Aug 2022  </span>
+
+              <p class="timeline-text">
+              - Designed web applications using ASP.NET for backend and React Native for cross-platform mobile development, integrating third-party APIs to strengthen functionality and enhance user experience.<br><br>
+                
+              - Coordinated with senior developers in an Agile environment, learning troubleshooting techniques and solutions.<br><br>
+                
+              - Optimized performance and reduced bugs by 30% through proactive code reviews and version control management with Git, consistently meeting project deadlines. <br><br>
+                
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <!-- <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Web design</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Graphic design</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Branding</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">WordPress</h5>
+                <data value="50">50%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section> -->
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Data Analysis</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Data Science</button>
+            </li>
+
+
+            <li class="filter-item">
+              <button data-filter-btn>Data Visualizations</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Research</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Data Analysis</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Data Science</button>
+              </li>
+
+
+              <li class="select-item">
+                <button data-select-item>Data Visualizations</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Research</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="Data Analysis">
+              <a href="https://github.com/JanhaviiiP/Customer-Segmentation-">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="assets\images\customer.png" alt="Customer Segmentation Analysis" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Customer Segmentation Analysis</h3>
+
+                <p class="project-category">Data Analysis</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="Data Analysis">
+              <a href="https://github.com/JanhaviiiP/Sales_Insight-PowerBI/tree/main/Sales%20Analysis">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="assets\images\sales-insights.png" alt="E-commerce Sales Analysis and Forecasting" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">E-commerce Sales Analysis and Forecasting</h3>
+
+                <p class="project-category">Data Analysis</p>
+
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="Data Science">
+              <a href="https://github.com/JanhaviiiP/Data-Science-/tree/main/Text-Summarizer-using-GenAi">
+                  <figure class="project-img">
+                      <div class="project-item-icon-box">
+                          <ion-icon name="eye-outline"></ion-icon>
+                      </div>
+                      <img src="assets/images/ai.jpg" alt="Text-Summarizer-using-Google-GenAi" loading="lazy">
+                  </figure>
+                  <h3 class="project-title">Text Summarizer Using Google GenAI</h3>
+                  <p class="project-category">Data Science</p>
+              </a>
+          </li>
+
+            <li class="project-item  active" data-filter-item data-category="Data Science">
+              <a href="https://github.com/JanhaviiiP/Life_Insurance_Predication">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="assets\images\healthcare.png" alt="Health Insurance Prediction System" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Health Insurance Prediction System</h3>
+
+                <p class="project-category">Data Science</p>
+
+              </a>
+            </li>
+
+            
+
+            <li class="project-item  active" data-filter-item data-category="Data Analysis ">
+              <a href="https://github.com/JanhaviiiP/Stock-Market-finance-">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="assets\images\stock.jpg" alt="Stock Market Portfolio Optimization and Anomaly Detection" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Stock Market Portfolio Optimization and Anomaly Detection</h3>
+
+                <p class="project-category">Data Analysis</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="Research">
+              <a href="https://github.com/JanhaviiiP/Research/tree/main/AI">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="assets\images\AI.png" alt="Ethical AI and Bias Mitigation in Machine Learning Models" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Ethical AI and Bias Mitigation in Machine Learning Models</h3>
+
+                <p class="project-category">Research</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="Research">
+              <a href="https://github.com/JanhaviiiP/Research/tree/main/Federated%20Learning">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="assets\images\data privacy.png" alt="Federated Learning for Privacy-Preserving Data Analysis" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Federated Learning for Privacy-Preserving Data Analysis</h3>
+
+                <p class="project-category">Research</p>
+
+              </a>
+            </li>
+
+           
+
+            
+
+            <li class="project-item  active" data-filter-item data-category="Research">
+              <a href="https://github.com/JanhaviiiP/Market-Analysis/tree/main">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="assets\images\Market-Research.jpg" alt="Market Research" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Market Research</h3>
+
+                <p class="project-category">Research</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="Data Visualizations">
+              <a href="https://github.com/JanhaviiiP/Sales_Insight-PowerBI">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="assets\images\transaction.jpg" alt="Sales and Revenue Analysis Dashboard" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Sales and Revenue Analysis Dashboard</h3>
+
+                <p class="project-category">Data Visualizations</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="Applications">
+              <a href="https://github.com/JanhaviiiP/Software-Development-">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="assets\images\food_delivery.webp" alt="Prefood Delivery App" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Prefood Delivery App</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #Skills
+      -->
+      
+
+<!-- <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Web design</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Graphic design</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Branding</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">WordPress</h5>
+                <data value="50">50%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+         -->
+
+      
+
+        <!-- <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+
+                  <p class="blog-text">
+                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+
+                  <p class="blog-text">
+                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #80</h3>
+
+                  <p class="blog-text">
+                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
+
+                  <p class="blog-text">
+                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
+
+                  <p class="blog-text">
+                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #79</h3>
+
+                  <p class="blog-text">
+                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section> -->
+
+      <!-- </article> -->
+
+<!-- Skills Section -->
+<article class="skills" data-page="skills">
+  <header>
+    <h2 class="h2 article-title">Skills</h2>
+  </header>
+
+  <section class="projects">
+    <ul class="filter-list">
+      <li class="filter-item">
+        <button class="active" data-filter-btn>All</button>
+      </li>
+      <li class="filter-item">
+        <button data-filter-btn>Database</button>
+      </li>
+      <li class="filter-item">
+        <button data-filter-btn>Programming</button>
+      </li>
+      <li class="filter-item">
+        <button data-filter-btn>Tools</button>
+      </li>
+      <li class="filter-item">
+        <button data-filter-btn>Soft Skills</button>
+      </li>
+    </ul>
+
+    <ul class="project-list">
+      <!-- Database -->
+      <li class="project-item active" data-filter-item data-category="Database">
+        <img src="https://img.icons8.com/color/48/microsoft-sql-server.png" alt="SQLServer">
+        
+      </li>
+      <li class="project-item active" data-filter-item data-category="Database">
+        <img src="https://img.icons8.com/color/48/000000/mysql.png" alt="MySQL">
+        
+      </li>
+      <li class="project-item active" data-filter-item data-category="Database">
+        <img src="  https://img.icons8.com/color/48/postgreesql.png" alt="postgreesql">
+        
+      </li>
+      <li class="project-item active" data-filter-item data-category="Database">
+        <img src="https://img.icons8.com/color/48/000000/oracle-logo.png" alt="Oracle">
+        
+      </li>
+      <li class="project-item active" data-filter-item data-category="Database">
+        <img src="https://img.icons8.com/color/48/000000/mongodb.png" alt="MongoDB">
+        
+      </li>
+    
+       <!-- Programming Skills -->
+      <li class="project-item active" data-filter-item data-category="Programming">
+        <img src="https://img.icons8.com/color/48/000000/python--v1.png" alt="Python">
+        
+      </li>
+      <li class="project-item active" data-filter-item data-category="Programming">
+        <img src="https://img.icons8.com/color/48/000000/html-5--v1.png" alt="HTML">
+        
+      </li>
+    </li>
+    <li class="project-item active" data-filter-item data-category="Programming">
+      <img src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS">
+      
+    </li>
+    <li class="project-item active" data-filter-item data-category="Programming">
+      <img src="https://img.icons8.com/color/48/000000/javascript--v1.png" alt="JavaScript">
+     
+    </li>
+    <li class="project-item active" data-filter-item data-category="Programming">
+      <img src="https://img.icons8.com/color/48/000000/react-native.png" alt="React">
+      
+    </li>
+    <li class="project-item active" data-filter-item data-category="Programming">
+      <img src="https://img.icons8.com/color/48/000000/nodejs.png" alt="Node.js">
+      
+    </li>
+     <!-- Tools -->
+     <li class="project-item active" data-filter-item data-category="Tools">
+      <img src="https://img.icons8.com/color/48/microsoft-excel-2019--v1.png" alt="Adv. Excel">
+    </li>
+    <li class="project-item active" data-filter-item data-category="Tools">
+      <img src="https://img.icons8.com/color/48/microsoft-office-2019.png" alt="MS Office">
+    </li>
+    <li class="project-item active" data-filter-item data-category="Tools">
+      <img src="https://img.icons8.com/color/48/tableau-software.png" alt="tableau-software">
+    </li>
+    <li class="project-item active" data-filter-item data-category="Tools">
+      <img src="https://img.icons8.com/fluency/48/azure-1.png" alt="Azure">
+    </li>
+    <li class="project-item active" data-filter-item data-category="Tools">
+      <img src="https://img.icons8.com/fluency/48/power-bi-2021.png" alt="PowerBI">
+    </li>
+    <li class="project-item active" data-filter-item data-category="Tools">
+      <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAC0AeAMBEQACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAAAQUCAwQGB//EADAQAAIBBAECBAQEBwAAAAAAAAECAwAEBRESITEGE0FRFDJhcSIjgaEVFiZCkaLw/8QAGAEBAQEBAQAAAAAAAAAAAAAAAAIBAwT/xAAoEQACAgIABAQHAAAAAAAAAAAAAQIRAyESEzGhBHGx0SJBUWGBkcH/2gAMAwEAAhEDEQA/APuNAKAUAoBQCgFAKAUAoBQCgFAKAUAoDBpUVmUn8SryIA2df8Ky1dG1qzTBewywRy7KCRgqhwRs+3Wqom0dNYaKAUAoBQCgFAKAUAoBQCgIdgiljvQG+g2f8UBUxGHkciRd8CqjgolZt7P9o7jr7arzyxrHN5Hfd9jtCbyRUFXZepyp5WVs4J2F1G0BV5BGs0alRv5APmP22avw+fmRut+XuT4nw/LlV68/YtMTeR3mOhnjSVVKA8ZFbl292G2+/rXZqnRyXQ843jCL+YY4xBlxZmzZjD/CbjmZOa6bj5fLWtjfbr76rtyXw3r9oji+Kj0GWy0OLxhvpY5nBKLHEifmSO5CqoB11JIHXVcoxcnSLbpWacLmJMlcXltPj57Ke0KB0ldG3yGwQVJFbKHCk07syMr+RUXfiK4xOZzTXFnd3OOtRC8ksTJxtlKbY8SQx9zoGuixqUVT2yXNps6fHz/02GRu97Z6IPcG5jrMCuf4foypdCy8QZm2wONa9uwzLzVERSoLsx0BtiAPuSABUQg5ypCUlFWzV4b8QWviC1mltRxaCXypU8xJAG0CNMhKsCCOoP07gityY3B0xGSkrRxSeK1+M8uHGXUtp8cLE3gaMJ5vLgdAtyIDdN67it5Wuu6slz30La+yUdne461kR2a+maJGXWlKxs+z9NIf2qFFtN/QuzDFZVcmrvDBKsaTzwMza0GikKH19SCRSUXF0wnZY1JooClW0voc1NdGUG38hAAkI22mc8B176I6/Wpp2ehzx8lRrdv+HI8V3kbHHSY/dtDHOhMTx8uOt/i2T1HWusVHHcTzTcpviZ6KBDHCiEqSqgEqvEH9PSoNONrOA5yO+MrfELatCI9jRQspJ9+4A/Wqt8NGUrsjN2VpkbH4O9do1kkQxuj8XWRWDKVPuCARSMnF2jJJNUzTisUuIN5dXGQubuWfi009z5Y0FGh8iqAAPpWynxUqoJVs5cl4Xgyd1dTvkL1La9VVurWJkEc6qNAE8eQBHfTDdVHK4rp0McLOnPY4ZzEfCW8yRgXEMnLjsflSq5H+mqnHPglfn3RrVrRty1nZ5mFrGSdklidJVaFwJIXB2rDv+40ayMnF2GlLRljLZsenw9zkZr2aVi4e4EatoADQCKo0Onp60k72lRq0Vdx4atI75Jv4ldwWz3q3XwQaPynn5ctjalhsjZAYDe6tZXVUS4Isc3job6O3nlupbSWzl86G4iK7jJUqfmBBBViOo9amEnG/ubJWbsPjYcTYi1geSQc3leSUgtI7sWZjoAbLEnoAKyUnJ2zUqR21JooBQEAADQ7UBNAY8F5h+I5AaB111QBkR+PNQ3E7GxvR96AkgMCGAIPQg0BNAQqhRpQB69KAgIoYsFAY9zrvQAopYOVBYdjrqKAMivrkoOjsbHY0BLKrqVdQynuCNg0BNAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQH/9k=" alt="Tableau">
+    </li>
+    <li class="project-item active" data-filter-item data-category="Tools">
+      <img src="assets\images\62e25d54ee8737216a3771e0_Snowflake_Logo (1).svg" alt="Snowflake">
+    </li>
+   
+    <li class="project-item active" data-filter-item data-category="Tools">
+      <img src="https://img.icons8.com/color/48/pandas.png" alt="Pandas">
+    </li>
+    <li class="project-item active" data-filter-item data-category="Tools">
+      <img src="https://img.icons8.com/color/48/numpy.png" alt="NumPy">
+    </li>
+    <li class="project-item active" data-filter-item data-category="Tools">
+      <img  width="100" height="50" src="https://scikit-learn.org/stable/_static/scikit-learn-logo-small.png" alt="Scikit-learn">
+    </li>
+    <li class="project-item active" data-filter-item data-category="Tools">
+      <img  width="70" height="60" src="https://matplotlib.org/_static/logo_dark.svg" alt="Matplotlib">
+    </li>
+    <li class="project-item active" data-filter-item data-category="Tools">
+      <img src="https://img.icons8.com/color/48/sap.png" alt="sap">
+    </li>
+    <li class="project-item active" data-filter-item data-category="Tools">
+      <img src="https://img.icons8.com/color/48/apache-spark.png" alt="apache-spark">
+    </li>
+    <li class="project-item active" data-filter-item data-category="Tools">
+      <img  width="140" height="50"src="https://images.seeklogo.com/logo-png/50/1/chatgpt-logo-png_seeklogo-503286.png?v=638665949450000000.png" alt="apache-spark">
+    </li>
+    <li class="project-item active" data-filter-item data-category="Tools">
+      <img  width="120" height="50"src=" https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Google_Gemini_logo.svg/330px-Google_Gemini_logo.svg.png" alt="apache-spark">
+    </li>
+    <li class="project-item active" data-filter-item data-category="Tools">
+      <img  width="120" height="50"src="  https://bravertechnology.com/wp-content/uploads/2023/11/Microsoft-365-Copilot-long.png" alt="apache-spark">
+    </li>
+
+
+
+   
+   
+    <!-- Soft Skills -->
+    
+      <li class="project-item active" data-filter-item data-category="Soft Skills">
+        <img src="https://img.icons8.com/color/48/000000/communication.png" alt="Communication">
+      </li>
+
+      <li class="project-item active" data-filter-item data-category="Soft Skills">
+        <img src="https://img.icons8.com/fluency/48/critical-thinking.png" alt="Analytical Thinking">
+      </li>
+      <li class="project-item active" data-filter-item data-category="Soft Skills">
+        <img  width="70" height="50" src="https://img.icons8.com/bubbles/100/google-web-search.png" alt="google-web-search">
+      </li>
+      
+
+      <li class="project-item active" data-filter-item data-category="Soft Skills">
+        <img src="https://img.icons8.com/color/48/creativity-and-resourcefulness.png" alt="Problem-Solving">
+      </li>
+      <li class="project-item active" data-filter-item data-category="Soft Skills">
+        <img src="https://img.icons8.com/color/48/property-with-timer.png" alt="Time Management">
+      </li>
+      <li class="project-item active" data-filter-item data-category="Soft Skills">
+        <img src="https://img.icons8.com/color/48/fine-print.png" alt="Research">
+      </li>
+      <li class="project-item active" data-filter-item data-category="Soft Skills">
+        <img src="https://img.icons8.com/color/48/training.png" alt="Presentation">
+       
+      </li>
+
+    </ul>
+    
+
+
+
+    
+  </section>
+</article>
+
+<article class="certificates" data-page="certificates">
+  <header>
+    <h2 class="h2 article-title">Certificates</h2>
+  </header>
+ 
+  <section class="certificates-container">
+     <!-- Certificate Card 1 -->
+     <div class="certificate-card">
+      <img src="assets\images\Data Analytics.jpeg">
+      <h3>Google Data Analytics</h3>
+      <a href="https://www.coursera.org/account/accomplishments/professional-cert/GFSA9KZUVBHL?utm_source=mobile&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=prof" target="_blank">View Certificate</a>
+  </div>
+
+  <!-- Certificate Card 2 -->
+  <div class="certificate-card">
+      <img src="assets\images\Prompt Engineering_Certificate.png">
+      <h3>Prompt Engineering</h3>
+      <a href="https://github.com/JanhaviiiP/Certificates/blob/main/Prompt%20Engineering.pdf" target="_blank">View Certificate</a>
+  </div>
+
+  <div class="certificate-card">
+    <img src="assets\images\Generative AI.jpg">
+    <h3>Generative AI</h3>
+    <a href="https://github.com/JanhaviiiP/Certificates/blob/main/GEN%20AI.pdf" target="_blank">View Certificate</a>
+</div>
+
+<div class="certificate-card">
+  <img src="assets\images\azure_certificate.jpg">
+  <h3>Microsoft Azure</h3>
+  <a href="https://github.com/JanhaviiiP/Certificates/blob/main/microsoft%20Azure.pdf" target="_blank">View Certificate</a>
+</div>
+
+  </section> 
+</article> 
+
+
+
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
+
 </html>
