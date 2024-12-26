@@ -2034,7 +2034,26 @@ textarea.form-input::-webkit-resizer { display: none; }
 .certificate-card a:hover {
   background: #f0a05e;
 }
+.project-list {
+  list-style: none;
+  padding: 0;
+}
 
+.project-item {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.project-item img {
+  margin-right: 10px;
+}
+
+.skill-text {
+  color: white; /* Ensures the text is white */
+  font-size: 14px;
+  font-weight: bold;
+}
 
 
 
