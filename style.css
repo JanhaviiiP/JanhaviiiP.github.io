@@ -2050,7 +2050,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 .skill-text {
-  color: white; /* Ensures the text is white */
+  color: white; 
   font-size: 14px;
   font-weight: bold;
 }
